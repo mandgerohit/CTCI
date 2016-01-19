@@ -4,9 +4,10 @@ public class Main {
 
 	public static void main(String args[]) throws IOException
 	{
+		int[] a = {3,5,8,5,10,2,1};
 		Main m = new Main();
 		CreateLinkedList cll= new CreateLinkedList();
-		Node head=cll.createList();
+		Node head=cll.createList(a);
 		
 		/* Remove Duplicate elements from the LinkedList
 		RemoveDuplicates rd=new RemoveDuplicates();
@@ -34,7 +35,11 @@ public class Main {
 		p.partitionList(head,4);		
 		*/
 		
-		m.print(head);
+		//Sum Lists problem, i.e. addition of two numbers in the form of linked list
+		 SumLists sm= new SumLists();
+		 Node sumHead=sm.sumListInit();
+		 m.print(sumHead);
+		//m.print(head);
 }
 	void print (Node head){
 		

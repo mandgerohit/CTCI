@@ -2,12 +2,11 @@ import java.io.*;
 import java.util.*;
 
 public class CreateLinkedList {
-
-	Node createList(){
+	LinkedListOperations ls=new LinkedListOperations();
+	
+	Node createList(int[] elements){
 		
 		System.out.println("Creating a new LinkedList...");
-		LinkedListOperations ls=new LinkedListOperations();
-		int[] elements = {3,5,8,5,10,2,1};
 		
 		Node root=new Node();
 		root.setData(elements[0]);
