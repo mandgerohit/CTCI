@@ -46,15 +46,15 @@ public void removeNode(Node node){
 
 public static void main(String args[]) throws IOException
 {
-	System.out.println("Creating a new LinkedList...");
+
 	LinkedListOperations ls=new LinkedListOperations();
 	
 	Node n1=new Node();
-	n1.setData("1");
+	n1.setData(1);
 	ls.setRoot(n1);
 	
 	Node n2=new Node();
-	n2.setData("2");
+	n2.setData(1);
 	ls.addNode(n2);
 	
 	ls.removeNode(n1);

@@ -1,15 +1,15 @@
 
 public class Node {
 
-public String data;
+public int data;
 public Node next;
 
-public String getData()
+public int getData()
 {
 	return data;
 }
 	
-public void setData(String data)
+public void setData(int data)
 {
 	this.data=data;
 }

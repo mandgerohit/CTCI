@@ -24,8 +24,15 @@ public class Main {
 		}
 		*/
 		
+		/*Delete middle element of singly linkedList
 		DeleteMiddleElement dme=new DeleteMiddleElement();
 		dme.deleteMiddle(head);
+		*/
+		
+		/*Partitioning the elements
+		Partition p=new Partition();
+		p.partitionList(head,4);		
+		*/
 		
 		m.print(head);
 }

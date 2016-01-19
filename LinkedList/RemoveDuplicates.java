@@ -5,7 +5,7 @@ public class RemoveDuplicates {
 	
 	void removeDups(Node head){
 		
-		HashSet<String> set = new HashSet<String>();
+		HashSet<Integer> set = new HashSet<Integer>();
 		Node previous=null;
 		Node n =head;
 		
