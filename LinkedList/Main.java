@@ -16,7 +16,7 @@ public class Main {
 		
 		/* Find Kth element to the last
 		KthElementToLast kth = new KthElementToLast();
-		Node n=kth.kthToLast(head, 10);	
+		Node n=kth.kthToLast(head, 7);	
 		if(n!=null){
 		System.out.println("Kth Element to last is: "+n.data);
 		}
@@ -35,11 +35,18 @@ public class Main {
 		p.partitionList(head,4);		
 		*/
 		
-		//Sum Lists problem, i.e. addition of two numbers in the form of linked list
+		/*Sum Lists problem, i.e. addition of two numbers in the form of linked list
 		 SumLists sm= new SumLists();
 		 Node sumHead=sm.sumListInit();
 		 m.print(sumHead);
-		//m.print(head);
+		*/
+		
+		/*Palindrome problem in LinkedList
+		 Palindrome pl=new Palindrome();
+		 pl.testPalindrome(head);
+		*/
+		
+		 //m.print(head);
 }
 	void print (Node head){
 		

@@ -6,7 +6,7 @@ public class CreateLinkedList {
 	
 	Node createList(int[] elements){
 		
-		System.out.println("Creating a new LinkedList...");
+		//System.out.println("Creating a new LinkedList...");
 		
 		Node root=new Node();
 		root.setData(elements[0]);
