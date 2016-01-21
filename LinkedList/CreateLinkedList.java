@@ -18,6 +18,9 @@ public class CreateLinkedList {
 		ls.addNode(n);
 		}
 		Node head=ls.getHead();
+		/*To create a looping element
+		ls.addNode(head.next);
+		*/
 		return head;
 	}
 	

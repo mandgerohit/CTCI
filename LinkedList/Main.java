@@ -8,7 +8,7 @@ public class Main {
 		Main m = new Main();
 		CreateLinkedList cll= new CreateLinkedList();
 		Node head=cll.createList(a);
-		
+
 		/* Remove Duplicate elements from the LinkedList
 		RemoveDuplicates rd=new RemoveDuplicates();
 		rd.removeDups(head);
@@ -46,7 +46,12 @@ public class Main {
 		 pl.testPalindrome(head);
 		*/
 		
-		 //m.print(head);
+		/*Loop detection in LinkedList where an element appears twice
+		LoopDetection ld = new LoopDetection();
+		ld.detectLoop(head);
+		*/
+		
+		//m.print(head);
 }
 	void print (Node head){
 		
