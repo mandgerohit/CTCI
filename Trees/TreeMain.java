@@ -39,6 +39,12 @@ public class TreeMain {
 		else System.out.println("It is NOT a BST");
 		*/
 		
+		/*Next Node in BST
+		NextNodeBST next=new NextNodeBST();
+		TreeNode n=next.nextNode(root.left);
+		System.out.println(n.data);
+		*/
+		
 	}
 	
 }

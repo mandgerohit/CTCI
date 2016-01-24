@@ -6,11 +6,10 @@ public class TreeNode {
 	TreeNode right;
 	TreeNode parent;
 	
-	public TreeNode(int data){
+	public TreeNode(int data, TreeNode parent){
 		left=null;
 		right=null;
-		parent=null;
-		
+		this.parent=parent;
 		this.data=data;
 	}
 }
