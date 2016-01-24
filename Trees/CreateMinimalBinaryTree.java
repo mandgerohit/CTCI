@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class CreateTree {
+public class CreateMinimalBinaryTree {
 	
 	TreeNode initializeBinaryTree(int[] arr){
 		return CreateBinaryTree(arr, 0, arr.length-1);
