@@ -5,20 +5,20 @@ import java.util.*;
 public class BreadthFirstSearch{
 	
 	Graph g=new Graph();
-	Queue<TreeNode> q=new LinkedList<TreeNode>();
-	ArrayList<TreeNode> path=new ArrayList<TreeNode>();
+	Queue<Node> q=new LinkedList<Node>();
+	ArrayList<Node> path=new ArrayList<Node>();
 	ArrayList<String> sort=new ArrayList<String>();
 	
-	public void bfs(Map<String, TreeNode> graph, String src, String dest)
+	public void bfs(Map<String, Node> graph, String src, String dest)
 	{
-	TreeNode root=g.initializeQueue(graph, src);	
+	Node root=g.initializeQueue(graph, src);	
 	q.add(root);
 	root.isvisited=true;
 	System.out.print(root.name+"-->");
 	
 	while(!q.isEmpty())
 	{
-		TreeNode head=q.poll();
+		Node head=q.poll();
 
 		if (head.name.contains(dest))
 		{

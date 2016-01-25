@@ -9,7 +9,7 @@ public class TreeMain {
 	{		
 		CreateGraph cg=new CreateGraph();
 		BreadthFirstSearch b=new BreadthFirstSearch();
-		Map<String, TreeNode> graph;
+		Map<String, Node> graph;
 		
 		graph = cg.initializeMap();
 		b.bfs(graph, "arad", "pitesti");

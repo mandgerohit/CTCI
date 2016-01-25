@@ -1,10 +1,12 @@
 import java.io.*;
 import java.util.*;
+import java.util.Map.Entry;
 
 public class TreeMain {
 
 	// Taking Search Type, Source City and Destination as an input
 
+	@SuppressWarnings("null")
 	public static void main(String[] args) throws Exception
 	{	
 		int[] arr={1,2,3,5,6,8,9,10};
@@ -44,6 +46,17 @@ public class TreeMain {
 		TreeNode n=next.nextNode(root.left);
 		System.out.println(n.data);
 		*/
+		
+		BuildOrder b=new BuildOrder();
+
+		String[] nodearr={"a", "b", "c", "d", "e", "f"};
+		String dep[][]={
+		{"d", "a"},
+		{"b", "f"}, 
+		{"d", "b"}, 
+		{"a", "f"}, 
+		{"c", "d"}};	
+		b.initializeMap(nodearr, dep);	
 		
 	}
 	

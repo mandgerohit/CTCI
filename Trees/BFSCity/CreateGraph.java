@@ -5,19 +5,19 @@ import java.util.Map;
 
 public class CreateGraph {
 
-	Map<String, TreeNode> graph;
+	Map<String, Node> graph;
 	public ArrayList<String> path = new ArrayList<String>();
 	ArrayList<String> sort=new ArrayList<String>();
 	
 	public CreateGraph()
 	{
-		graph=new HashMap<String, TreeNode>();
+		graph=new HashMap<String, Node>();
 	}
 
 	
-	public Map<String, TreeNode> initializeMap()
+	public Map<String, Node> initializeMap()
 	{
-		/*
+		
 		addEdge("oradea","zerind",71);  addEdge("zerind","arad",75);
 		addEdge("arad","timisoara",118);  addEdge("timisoara","lugoj",111);
 		addEdge("lugoj","mehadia",70);  addEdge("dobreta","mehadia",75);
@@ -30,16 +30,16 @@ public class CreateGraph {
 		addEdge("vaslui","urziceni",142);  addEdge("hirsova","urziceni",98);
 		addEdge("hirsova","eforie",86);  addEdge("vaslui","iasi",92);
 		addEdge("neamt","iasi",87);
-		*/
+		
 		
 		return graph;
 	}
 
-	public TreeNode addNode(String name)
+	public Node addNode(String name)
 	{
 		if (graph.get(name)==null)
 		{
-			TreeNode node=new TreeNode(name);
+			Node node=new Node(name);
 			graph.put(name, node);
 		}
 		return graph.get(name);	
@@ -47,8 +47,8 @@ public class CreateGraph {
 	
 	public void addEdge(String source, String destination, Integer distance)
 	{
-		TreeNode n1=addNode(source);
-		TreeNode n2=addNode(destination);
+		Node n1=addNode(source);
+		Node n2=addNode(destination);
 
 		n1.adj.add(n2);
 		n2.adj.add(n1);
