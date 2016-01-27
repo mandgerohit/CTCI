@@ -47,6 +47,7 @@ public class TreeMain {
 		System.out.println(n.data);
 		*/
 		
+		/*Build Order, topological Sort
 		BuildOrder b=new BuildOrder();
 
 		String[] nodearr={"a", "b", "c", "d", "e", "f"};
@@ -57,7 +58,13 @@ public class TreeMain {
 		{"a", "f"}, 
 		{"c", "d"}};	
 		b.initializeMap(nodearr, dep);	
+		*/
 		
+		/*Common Ancestor
+		CommonAncestor ca=new CommonAncestor();
+		TreeNode ancestor=ca.findAncestor(root, root.left, root.right.left);
+		System.out.println(ancestor.data);
+		*/
 	}
 	
 }
