@@ -35,6 +35,22 @@ public class StackMain {
 		System.out.println(mq.remove().data);
 		*/
 		
+		/* Sorted stack
+		SimpleStack s1=new SimpleStack();
+		s1.push(0);s1.push(7);s1.push(6);s1.push(8);s1.push(3);s1.push(1);
+		SortedStack ss=new SortedStack(s1);
+		SimpleStack s2=ss.sort();
+		System.out.println(s2.pop().data);
+		*/
+		
+		/*Animal Queue
+		AnimalShelter aq=new AnimalShelter();
+		aq.enqueue("dog", 0);aq.enqueue("dog", 2);aq.enqueue("cat", 1);aq.enqueue("cat", 3);aq.enqueue("dog", 5);
+		System.out.println(aq.dequeueAny());
+		System.out.println(aq.dequeueCat());
+		System.out.println(aq.dequeueDog());
+		System.out.println(aq.dequeueAny());
+		*/
 	}
 	
 }
