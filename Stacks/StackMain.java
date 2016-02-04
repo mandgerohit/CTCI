@@ -45,12 +45,13 @@ public class StackMain {
 		
 		/*Animal Queue
 		AnimalShelter aq=new AnimalShelter();
-		aq.enqueue("dog", 0);aq.enqueue("dog", 2);aq.enqueue("cat", 1);aq.enqueue("cat", 3);aq.enqueue("dog", 5);
-		System.out.println(aq.dequeueAny());
-		System.out.println(aq.dequeueCat());
-		System.out.println(aq.dequeueDog());
-		System.out.println(aq.dequeueAny());
+		aq.enqueue(new Dog(1));aq.enqueue(new Cat(2));aq.enqueue(new Cat(3));aq.enqueue(new Dog(4));aq.enqueue(new Dog(5));
+		Animal a=aq.dequeueAny();
+		System.out.println(a.type+" "+a.timestamp);
+		Animal c=aq.dequeueCat();
+		System.out.println(c.type+" "+c.timestamp);
 		*/
+
 	}
 	
 }

@@ -1,25 +1,40 @@
 import java.io.*;
 import java.util.*;
 
+
+abstract class Animal{
+	
+	public String type;
+	public int timestamp;
+	
+}
+
 public class AnimalShelter {
 	
-	LinkedList<Integer> dogQ=new LinkedList<Integer>();
-	LinkedList<Integer> catQ=new LinkedList<Integer>();
+	LinkedList<Dog> dogQ=new LinkedList<Dog>();
+	LinkedList<Cat> catQ=new LinkedList<Cat>();
 
-	public void enqueue(String animal, int timestamp){
+	public void enqueue(Animal animal){
 		
-		if(animal=="dog") dogQ.add(timestamp);
-		else catQ.add(timestamp);
+		if(animal.type=="dog") {
+			dogQ.addLast((Dog)animal);
+		}
+		else catQ.addLast((Cat)animal);
 		
 	}
 	
-	public int dequeueAny(){
+	public Animal dequeueAny(){
 		
-		if(catQ.peek()==null) dequeueDog();
+		if(catQ.isEmpty() && dogQ.isEmpty()) {
+			emptyQueueError("animal");
+			return null;
+		}
 		
-		if(dogQ.peek()==null) dequeueCat();
+		if(catQ.isEmpty()) dequeueDog();
 		
-		if(catQ.peek()<dogQ.peek()){
+		if(dogQ.isEmpty()) dequeueCat();
+		
+		if(catQ.peek().timestamp<dogQ.peek().timestamp){
 			
 			return catQ.poll();
 		}
@@ -27,17 +42,69 @@ public class AnimalShelter {
 		
 	}
 	
-	public int dequeueCat(){
+	public Cat dequeueCat(){
 		
-		return catQ.poll();
+		if(catQ.peek()!=null){
+			return catQ.poll();
+		}
+		else{
+			emptyQueueError("cat");
+			return null;
+		}
 		
 	}
 	
-	public int dequeueDog(){
+	public Dog dequeueDog(){
 		
-		return dogQ.poll();
-		
+		if(dogQ.peek()!=null){
+			return dogQ.poll();
+		}
+		else{
+			emptyQueueError("dog");
+			return null;
+		}
 	}
 	
+	public void emptyQueueError(String type){
+		
+		if(type=="cat"){
+			System.out.println("Cat queue is empty");
+			return;
+		}
+		else {
+			if(type=="dog"){
+				System.out.println("Dog queue is empty");
+				return;
+			}
+			else {
+				System.out.println("Animal queues are empty");
+				return;
+			}
+		}
+	}
 	
 }
+
+
+class Dog extends Animal{
+	
+	public Dog(int timestamp){
+		
+		this.type="dog";
+		this.timestamp=timestamp;
+	}
+	
+}
+
+class Cat extends Animal{
+	
+	public Cat(int timestamp){
+		
+		this.type="cat";
+		this.timestamp=timestamp;
+	}
+	
+}
+
+
+
