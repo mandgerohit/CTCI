@@ -3,26 +3,48 @@ import java.util.*;
 
 public class SetOfStacks {
 		
-		StackNode top=null;
+		ArrayList<StackSet> set=new ArrayList<StackSet>();
+		int capacity;
+		
+		public SetOfStacks(int capacity){
+			this.capacity=capacity;
+			StackSet stack=new StackSet(this.capacity);
+			set.add(stack);
+		}
 		
 		public void push(int n){
 			
-			StackNode node=new StackNode(n);
-			node.next=top;
-			top=node;
+			StackSet last=getLastStack();
+			if(!last.isFull() && last!=null){
+				last.push(n);
+			}
+			else{
+				StackSet stack=new StackSet(capacity);
+				stack.push(n);
+				set.add(stack);
+			}
 		}
 		
 		public StackNode pop(){
 			
-			StackNode item=top;
-			top=top.next;
-			return item;
+			StackSet last=getLastStack();
+			
+			if(last!=null && last.peek()!=null){
+				return last.pop();
+			}
+			else{
+				set.remove(set.lastIndexOf(last));
+				return getLastStack().pop();
+			}
+			
 		}
 		
-		public StackNode peek(){
+		public StackSet getLastStack(){
 			
-			return top;
+			if(set.size()==0) return null;
+			return set.get(set.size()-1);
+			
 		}
-
+		
 }
 

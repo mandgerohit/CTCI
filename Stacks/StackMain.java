@@ -23,6 +23,14 @@ public class StackMain {
 		System.out.println(sm.min());
 		*/
 		
+		/*Stack of Stacks
+		SetOfStacks sos = new SetOfStacks(3);
+		sos.push(1);sos.push(2);sos.push(3);sos.push(4);sos.push(5);sos.push(6);
+		System.out.println(sos.pop().data+" "+sos.pop().data);
+		*/
+		
+		
+		
 		
 		
 	}
