@@ -10,9 +10,9 @@ public class SimpleStack{
 	}
 
 	public void push(int n){
-			StackNode node=new StackNode(n);
-			node.next=top;
-			top=node;
+		StackNode node=new StackNode(n);
+		node.next=top;
+		top=node;
 	}
 	
 	public StackNode pop(){
@@ -31,6 +31,11 @@ public class SimpleStack{
 	public StackNode peek(){
 		
 		return top;
+	}
+	
+	public boolean isEmpty(){
+		
+		return (this.peek()==null);
 	}
 
 }

@@ -29,9 +29,11 @@ public class StackMain {
 		System.out.println(sos.pop().data+" "+sos.pop().data);
 		*/
 		
-		
-		
-		
+		/*Implement Queue using Stacks
+		MyQueue mq=new MyQueue();
+		mq.add(5);mq.add(4);mq.add(3);mq.add(3);mq.add(1);
+		System.out.println(mq.remove().data);
+		*/
 		
 	}
 	
