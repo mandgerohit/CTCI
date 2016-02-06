@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Partition {
 	
-	void partitionList(Node head, Integer k){
+	Node partitionList(Node head, Integer k){
 		
 		Node current;
 		Node runner;
@@ -20,7 +20,7 @@ public class Partition {
 			}
 			runner=runner.next;
 		}
-		
+		return head;
 	}
 
 }

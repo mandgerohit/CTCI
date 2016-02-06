@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String args[]) throws IOException
 	{
-		int[] a = {3,5,8,5,10,2,1};
+		int[] a = {10,5,8,5,8,5,10};
 		Main m = new Main();
 		CreateLinkedList cll= new CreateLinkedList();
 		Node head=cll.createList(a);
@@ -32,7 +32,7 @@ public class Main {
 		
 		/*Partitioning the elements
 		Partition p=new Partition();
-		p.partitionList(head,4);		
+		m.print(p.partitionList(head,4));
 		*/
 		
 		/*Sum Lists problem, i.e. addition of two numbers in the form of linked list
@@ -44,7 +44,10 @@ public class Main {
 		/*Palindrome problem in LinkedList
 		 Palindrome pl=new Palindrome();
 		 pl.testPalindrome(head);
-		*/
+		 
+		 PalindromeStack p=new PalindromeStack();
+		 p.testPalindrome(head);
+		 */
 		
 		/*Loop detection in LinkedList where an element appears twice
 		LoopDetection ld = new LoopDetection();

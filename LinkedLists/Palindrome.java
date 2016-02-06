@@ -4,7 +4,7 @@ import java.util.*;
 public class Palindrome {
 
 	ArrayList<Integer> arr = new ArrayList<Integer>();
-	CreateLinkedList cll= new CreateLinkedList();
+	//CreateLinkedList cll= new CreateLinkedList();
 	
 	void testPalindrome(Node head){
 		

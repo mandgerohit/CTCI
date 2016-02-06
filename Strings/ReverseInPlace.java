@@ -1,31 +1,25 @@
+import java.util.Stack;
 import java.io.*;
-import java.util.*;
 
 public class ReverseInPlace {
 	
 	public String reverse(String s){
-		
-		String r="";
-		Stack<Character> stack=new Stack<Character>();
-		
-		for(int i=0;i<=s.length();i++){
 			
-			if(i<s.length() && s.charAt(i)!=' '){
-				stack.add(s.charAt(i));
-				//System.out.print(s.charAt(i));
-			}
-			else{
-				while(!stack.isEmpty()){
+			StringBuilder sb=new StringBuilder();
+			
+			String[] words=s.split(" ");
+			
+			for(String s1: words){
+				
+				for(int i=s1.length()-1;i>=0;i--){
 					
-					//System.out.print(stack.peek());
-					r=r+stack.peek();
-					stack.pop();
+					sb.append(s1.charAt(i));
+					
 				}
-				r=r+" ";
+				sb.append(" ");
 			}
-		}
-		
-		return r;
+			
+			return sb.toString().trim();
 	}
 	
 	public static void main(String[] args)throws IOException{
@@ -34,5 +28,5 @@ public class ReverseInPlace {
 		System.out.println(re.reverse("hello world"));
 		
 	}
-
+	
 }
