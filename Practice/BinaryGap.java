@@ -35,18 +35,18 @@ public class BinaryGap {
 		
 		String bin=toBinary(a);
 		
-		int temp=0;
+		int count=0;
 		
 		for(int i=0;i<=bin.length()-1;i++){
 			
 			if(bin.charAt(i)=='1'){
-				if(temp>max_count){
-				max_count=temp;
-				temp=0;
+				if(count>max_count){
+					max_count=count;
+					count=0;
 				}
 			}
 			else{
-				temp++;
+				count++;
 			}
 		}
 		
