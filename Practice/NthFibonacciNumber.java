@@ -17,17 +17,13 @@ public class NthFibonacciNumber {
 		return fibo[n];
 	}
 	
-	public int fiboOptimized(int n){
-		
-		
-		
-		return 1;
-	}
-	
 	public static void main(String[] args)throws IOException{
 		
 		NthFibonacciNumber f= new NthFibonacciNumber();
-		System.out.println(f.fibo(7));
+		long startTime = System.nanoTime();
+		System.out.println(f.fibo(6));
+		long endTime = System.nanoTime();
+		System.out.println((double)(endTime-startTime)/1000000);
 		
 	}
 }
