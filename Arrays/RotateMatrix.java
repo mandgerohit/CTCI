@@ -46,8 +46,9 @@ public class RotateMatrix {
 		
 		int[][] image=new int[4][4];
 		int k=1;
-		for(int i=0;i<=3;i++){
-			for(int j=0;j<=3;j++){
+		int n=3;
+		for(int i=0;i<=n;i++){
+			for(int j=0;j<=n;j++){
 				image[i][j]=k;
 				k++;
 			}
