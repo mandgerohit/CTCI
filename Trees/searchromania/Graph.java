@@ -1,4 +1,4 @@
-package BFSCity;
+package searchromania;
 import java.util.*;
 
 public class Graph 

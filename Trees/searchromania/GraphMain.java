@@ -1,7 +1,7 @@
-package BFSCity;
+package searchromania;
 import java.util.*;
 
-public class TreeMain {
+public class GraphMain {
 
 	// Taking Search Type, Source City and Destination as an input
 	
