@@ -10,9 +10,12 @@ public class TreeMain {
 	public static void main(String[] args) throws Exception
 	{	
 		int[] arr={1,2,3,5,6,8,10,12};
+		
+		/*Binary Tree
 		BinaryTree bt=new BinaryTree();
 		TreeNode root=bt.initializeBinaryTree(arr);
-		//System.out.println(root.data);
+		System.out.println(root.data);
+		*/
 		
 		/* Binary Search Tree
 		BinarySearchTree bst=new BinarySearchTree();
@@ -23,7 +26,13 @@ public class TreeMain {
 		bst.addNode(r, new TreeNode(4));
 		System.out.println(r.left.right.data);
 		*/
-			
+		
+		/*Kth Smallest Element in BST
+		BinarySearchTree bst=new BinarySearchTree();
+		TreeNode r=bst.initializeBinaryTree(arr);
+		KthSmallestBST k=new KthSmallestBST();
+		k.find(r, 3);
+		*/
 		
 		/* Depth wise LinkedList
 		ArrayList<LinkedList<TreeNode>> lt=new ArrayList<LinkedList<TreeNode>>();

@@ -49,7 +49,7 @@ public class BuildOrder {
 		
 		while(!q.isEmpty()){
 			GraphNode x=q.poll();
-			System.out.println(x.name);
+			//System.out.println(x.name);
 			
 			path=getSuccessors(x);
 			
