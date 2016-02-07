@@ -25,7 +25,10 @@ public class BinarySearchTree {
 	
 	public boolean addNode(TreeNode root, TreeNode n){
 		
-		if(root==null) return false;
+		if(root==null) {
+			addNode(n, n);
+			return true;
+		}
 		
 		if(n.data<root.data){
 			if(!addNode(root.left, n)){
@@ -52,9 +55,15 @@ public class BinarySearchTree {
 		
 		if(n.left==null && n.right==null){
 			
-			if(n==n.parent.left) n.parent.left=null;
-			if(n==n.parent.right) n.parent.right=null;
-			return true;
+			if(n.parent==null){
+				n=null;
+				return true;
+			}
+			else{
+				if(n==n.parent.left) n.parent.left=null;
+				if(n==n.parent.right) n.parent.right=null;
+				return true;
+			}
 		}
 		
 		if(n.left!=null && n.right==null){

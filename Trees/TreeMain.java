@@ -9,7 +9,7 @@ public class TreeMain {
 	@SuppressWarnings("null")
 	public static void main(String[] args) throws Exception
 	{	
-		int[] arr={1,2,3,5,6,8,10,12};
+		int[] arr={1};
 		
 		/*Binary Tree
 		BinaryTree bt=new BinaryTree();
@@ -20,11 +20,21 @@ public class TreeMain {
 		/* Binary Search Tree
 		BinarySearchTree bst=new BinarySearchTree();
 		TreeNode r=bst.initializeBinaryTree(arr);
+		//System.out.println(r.data);
+		if(bst.removeNode(r)) {
+			System.out.println("Node removed successfully");
+		}
+		else{
+			System.out.println("Node NOT removed successfully");
+		}
+		//System.out.println(r.left.data);
+		if(bst.addNode(null, new TreeNode(4))) {
+			System.out.println("Node added successfully");
+		}
+		else{
+			System.out.println("Node NOT added successfully");
+		}
 		System.out.println(r.data);
-		bst.removeNode(r.left);
-		System.out.println(r.left.data);
-		bst.addNode(r, new TreeNode(4));
-		System.out.println(r.left.right.data);
 		*/
 		
 		/*Kth Smallest Element in BST
