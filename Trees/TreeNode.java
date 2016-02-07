@@ -12,4 +12,10 @@ public class TreeNode {
 		this.parent=parent;
 		this.data=data;
 	}
+	
+	public TreeNode(int data){
+		left=null;
+		right=null;
+		this.data=data;
+	}
 }

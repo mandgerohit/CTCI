@@ -9,16 +9,21 @@ public class TreeMain {
 	@SuppressWarnings("null")
 	public static void main(String[] args) throws Exception
 	{	
-		int[] arr={1,2,3,5,6,8,9,10};
+		int[] arr={1,2,3,5,6,8,10,12};
 		BinaryTree bt=new BinaryTree();
 		TreeNode root=bt.initializeBinaryTree(arr);
 		//System.out.println(root.data);
 		
-		/* Minimal Binary Tree
-		CreateMinimalBinaryTree ct=new CreateMinimalBinaryTree();
-		TreeNode root=ct.initializeBinaryTree(arr);
-		//System.out.println(root.data);
+		/* Binary Search Tree
+		BinarySearchTree bst=new BinarySearchTree();
+		TreeNode r=bst.initializeBinaryTree(arr);
+		System.out.println(r.data);
+		bst.removeNode(r.left);
+		System.out.println(r.left.data);
+		bst.addNode(r, new TreeNode(4));
+		System.out.println(r.left.right.data);
 		*/
+			
 		
 		/* Depth wise LinkedList
 		ArrayList<LinkedList<TreeNode>> lt=new ArrayList<LinkedList<TreeNode>>();
