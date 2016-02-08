@@ -21,13 +21,13 @@ public class SumLists {
 		int total=sum1+sum2;
 		int rem;
 		rem=total%10;
-		Node root=new Node();
+		Node root=new Node(rem);
 		root.setData(rem);
 		ls.setRoot(root);
 		total=total/10;
 		while(total!=0){	
 			rem=total%10;
-			Node n=new Node();
+			Node n=new Node(rem);
 			n.setData(rem);
 			ls.addNode(n);
 			total=total/10;
