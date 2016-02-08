@@ -4,13 +4,18 @@ public class Main {
 
 	public static void main(String args[]) throws IOException
 	{
-		int[] a = {2,3,1,5,4,7};
+		int[] a = {2,3,1,5,5,5,4,4,7};
 		Main m = new Main();
 		CreateLinkedList cll= new CreateLinkedList();
 		Node head=cll.createList(a);
-
+		
 		/* Remove Duplicate elements from the LinkedList
 		RemoveDuplicates rd=new RemoveDuplicates();
+		rd.removeDups(head);
+		*/
+		
+		/* Remove Duplicate elements from the LinkedList using Array
+		RemoveDuplicatesArray rd=new RemoveDuplicatesArray();
 		rd.removeDups(head);
 		*/
 		
@@ -58,6 +63,7 @@ public class Main {
 		*/
 		
 		//m.print(head);
+		
 }
 	void print (Node head){
 		

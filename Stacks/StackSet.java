@@ -23,6 +23,7 @@ public class StackSet{
 		if(this.peek()!=null){
 			StackNode item=top;
 			top=top.next;
+			this.size--;
 			return item;
 		}
 		else{

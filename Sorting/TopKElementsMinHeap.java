@@ -45,7 +45,7 @@ private int heapsize=0;
 		
 		heapsize=a.length;
 		
-		for(int i=(int)Math.floor(a.length/2);i>=0;i--){
+		for(int i=a.length/2;i>=0;i--){
 			
 			heapify(a, i);
 		}
