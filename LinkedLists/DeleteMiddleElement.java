@@ -12,8 +12,7 @@ public class DeleteMiddleElement {
 			runner=runner.next.next;
 			current=current.next;
 		}
-		current.next=current.next.next;
-		
+			current.next=current.next.next;
 	}
 	
 }

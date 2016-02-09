@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String args[]) throws IOException
 	{
-		int[] a = {2,3,1,5,5,5,4,4,7};
+		int[] a = {2,3,1,5,6,5,4,4,7};
 		Main m = new Main();
 		CreateLinkedList cll= new CreateLinkedList();
 		Node head=cll.createList(a);
@@ -33,10 +33,10 @@ public class Main {
 		*/
 		
 		
-		/*Delete middle element of singly linkedList
+		/*Delete middle element of singly linkedList*/
 		DeleteMiddleElement dme=new DeleteMiddleElement();
 		dme.deleteMiddle(head);
-		*/
+		
 		
 		/*Partitioning the elements
 		Partition p=new Partition();
@@ -62,13 +62,13 @@ public class Main {
 		ld.detectLoop(head);
 		*/
 		
-		//m.print(head);
+		m.print(head);
 		
 }
 	void print (Node head){
 		
 		for(Node q=head; q!=null;q=q.next){
-			System.out.println(q.data);
+			System.out.print(q.data+" ");
 		}
 	}
 }

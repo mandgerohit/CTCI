@@ -14,9 +14,9 @@ public class KthElementToLast {
 			return null;
 		}
 		else{
-		n=head;
-		for(int j=0;j<=i-k-1;j++){
-			n=n.next;
+			n=head;
+			for(int j=0;j<=i-k-1;j++){
+				n=n.next;
 		}
 		
 		return n;

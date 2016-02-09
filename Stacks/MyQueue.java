@@ -19,7 +19,7 @@ public class MyQueue {
 		else{
 			if(oldStack.peek()==null){
 				System.out.println("Queue is Empty");
-				return null;
+				throw new EmptyStackException();
 			}
 			else{
 				while(oldStack.top!=null){
