@@ -7,7 +7,7 @@ public class TopKElements {
 		
 		int[] top=new int[k];
 		
-		PriorityQueue heap = new PriorityQueue(a.length, Collections.reverseOrder());
+		PriorityQueue<Integer> heap = new PriorityQueue<Integer>(a.length, Collections.reverseOrder());
 		
 		for(int i=0;i<=a.length-1;i++){
 			
