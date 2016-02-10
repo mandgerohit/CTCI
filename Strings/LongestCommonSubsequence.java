@@ -20,7 +20,6 @@ public class LongestCommonSubsequence {
 					longseq[i][j]=Math.max(longseq[i+1][j], longseq[i][j+1]);
 				}
 			}
-			
 		}
 		
 		int i=0;
