@@ -84,7 +84,7 @@ public class ListWins{
 		ListWins l=new ListWins();
 		
 		Game g1=new Game("India", "Aus", 300, 250);
-		Game g2=new Game("India", "Aus", 325, 256);
+		Game g2=new Game("India", "Aus", 325, 300);
 		Game g3=new Game("Aus", "India", 400, 200);
 		Game g4=new Game("Aus", "India", 350, 350);
 		Game g5=new Game("Aus", "India", 280, 300);

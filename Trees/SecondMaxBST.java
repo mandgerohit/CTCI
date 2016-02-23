@@ -13,7 +13,6 @@ public class SecondMaxBST {
 	
 	public void find(TreeNode root){
 		
-		
 		if(root==null) return;
 		
 		find(root.right);
@@ -21,13 +20,15 @@ public class SecondMaxBST {
 		
 		if(count==2) node=root;
 		
+		find(root.left);
+		
 		return;
 	}
 	
 	public static void main(String[] args)throws IOException{
 		
 		SecondMaxBST s=new SecondMaxBST();
-		int[] arr={1,2,3,4,5,6,7,8};
+		int[] arr={1,2};
 		BinarySearchTree bst=new BinarySearchTree();
 		TreeNode r=bst.initializeBinaryTree(arr);
 		TreeNode n=s.getSecondMax(r);

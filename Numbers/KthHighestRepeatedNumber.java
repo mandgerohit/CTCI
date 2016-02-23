@@ -46,7 +46,7 @@ public class KthHighestRepeatedNumber {
 		int[] a={1,1,1,2,2,3,3,3,3,3,2,2};
 		
 		KthHighestRepeatedNumber kth=new KthHighestRepeatedNumber();
-		System.out.println(kth.find(a, 3));
+		System.out.println(kth.find(a, 2));
 	}
 	
 }

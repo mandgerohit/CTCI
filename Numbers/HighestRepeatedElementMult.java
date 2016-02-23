@@ -29,7 +29,7 @@ public class HighestRepeatedElementMult {
 			}
 		}				
 		
-		System.out.println("The addition of maximum occurring number is "+max*maxCount);	
+		System.out.println("The multiplication of maximum occurring number is "+max*maxCount);	
 	}
 
 
